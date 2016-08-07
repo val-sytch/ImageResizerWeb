@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Image Resizer</title>
+</head>
+<body>
+  <h2>Image resizer</h2>
+  <p>If you wish to resize one image..</p>
+    <form action="/cgi-bin/resizerWeb.py">
+      <p>
+        <p>Path to folder with images for resizing: <input type="text" name="path_to_get" 
+		placeholder="D:\firstFolder"  ></p>
+		<p>Path to folder for saving resized images: <input type="text" name="path_to_save" 
+		placeholder="D:\secondFolder" ></p>
+		<p>Width: <input type="text" name="width" placeholder="400" ></p>
+		<p>Height: <input type="text" name="height" placeholder="300" ></p>
+		<p>Path to and name of watermark file: <input type="text" name="watermark_file" 
+		placeholder="D:\firstFolder\watermark.jpg" ></p>
+		<p>Opacity of watermark(optional. Default = 0.3): <input type="text" name="opacity" 
+		placeholder="from 0 to 1" ></p>
+		<p>Image name(optional): <input type="text" name="img_to_get" placeholder="image.jpg" ></p>
+        <p><input type="submit" value="Start"></p>
+      </p>
+    </form>
+</body>
+</html>
